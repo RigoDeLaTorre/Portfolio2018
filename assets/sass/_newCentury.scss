@@ -1,0 +1,54 @@
+.top-nav{
+  text-align: center;
+  margin:5rem 0;
+}
+#newCentury{
+background:#afd09a;
+h1{
+  color:#afd09a;
+}
+.right-section{
+  background:#000000c7;
+height:100%;
+display:flex;
+justify-content: center;
+flex-direction: column;
+h1{
+  margin:0;
+}
+  .newCentury-images{
+    height:50vh;
+      width:100%;
+      margin:0 auto;
+      animation: newCenturyImages 20s ease infinite;
+      animation-fill-mode: forwards;
+      @keyframes newCenturyImages{
+        0%   {
+          background:url('../img/newCenturyInvestment/main.png') no-repeat center ;
+          background-size:contain;
+         }
+        20%   {background:url('../img/newCenturyInvestment/buy.png')no-repeat center ;
+          background-size:contain;
+        }
+
+        40%   {background:url('../img/newCenturyInvestment/sell.png')no-repeat center;
+          background-size:contain;
+
+        }
+        60%   {background:url('../img/newCenturyInvestment/mortgage.png')no-repeat center;
+          background-size:contain;
+
+        }
+        80%   {background:url('../img/newCenturyInvestment/contact.png')no-repeat center ;
+          background-size:contain;
+        }
+        100%   {
+          background:url('../img/newCenturyInvestment/main.png') no-repeat center ;
+          background-size:contain;
+         }
+  }
+  }
+}
+
+
+}

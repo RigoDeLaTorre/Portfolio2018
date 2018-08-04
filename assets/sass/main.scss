@@ -1,8 +1,11 @@
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "newCentury";
 
 body {
   font-family: 'Roboto', sans-serif;
+
+
 }
 
 header{
@@ -55,7 +58,13 @@ header{
     position:absolute;
     left:-75px;
     top:350px;
-      background: #ffa90012;
+      // background: #ffa90012;
+    border: 2px solid #ffa90012;
+  }
+  .squareNewCentury{
+      border: 2px solid #afd09a63;
+        left:-100px;
+
   }
   .seeWork{
     width:200px;
@@ -115,24 +124,18 @@ header{
     background:#000000c7;
 height:100%;
 
-
-
     .container{
       display:flex;
       flex-flow:row wrap;
       height:100%;
 
-      .main-logo-image{
 
-      // background:url('../img/logos/reactjs.png')no-repeat center ;
-      //     background-size:contain;
+      .main-logo-image{
       height:100%;
       width:50%;
       margin:0 auto;
       animation: image 30s ease infinite;
       animation-fill-mode: forwards;
-
-
       @keyframes image{
         0%   {
           background:url('../img/logos/reactjs.png') no-repeat center ;
