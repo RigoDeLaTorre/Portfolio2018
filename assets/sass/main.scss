@@ -1,0 +1,180 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  height:100vh;
+  background:#ffa900;
+  h1{
+    font-size:40px;
+    font-weight:600;
+    margin-top:200px;
+    letter-spacing: 2px;
+    text-align: center;
+
+  }
+
+  h2{
+    font-size: 16px;
+      font-weight: 100;
+      letter-spacing: 7px;
+      margin-bottom: 100px;
+      text-align: center;
+  }
+  nav{
+
+
+    ul{
+      display:flex;
+      justify-content: flex-end;
+      li{
+        padding:25px;
+      }
+    }
+
+  }
+  .top{
+    height:100%;
+
+.row{
+  height:100%;
+  margin:0 5rem;
+
+  .left{
+    background:white;
+    height:100%;
+    position:relative;
+
+  .square{
+
+    width:500px;
+    height:500px;
+    position:absolute;
+    left:-75px;
+    top:350px;
+      background: #ffa90012;
+  }
+  .seeWork{
+    width:200px;
+    height:50px;
+    // background:#d2c6c629;
+    position:absolute;
+    right:-100px;
+    top:400px;
+    color:white;
+    font-weight:700;
+    font-size:24px;
+    z-index: 1;
+    letter-spacing: 5px;
+    cursor:pointer;
+    // border: 2px solid white;
+    // border-width:thin;
+
+    & span:first-child{
+      color:#000000c7;
+      border: 1px solid black;
+      border-width:thin;
+      padding:10px;
+      position:absolute;
+      top:0;
+      left:25px;
+      z-index: 1;
+
+    }
+    & span:nth-child(2){
+      color:white;
+      border: 1px solid white;
+      border-width:thin;
+      padding:10px;
+      position:absolute;
+      top:0;
+      right:-1px;
+
+    }
+  }
+    .skills-container{
+      margin-top:2rem;
+      .skills{
+        margin-top:2rem;
+        text-transform: capitalize;
+        h3{
+          font-size:18px;
+          font-weight:400;
+        }
+        h4{
+          font-size:14px;
+          font-weight:100;
+        }
+      }
+    }
+  }
+  .right{
+    background:#000000c7;
+height:100%;
+
+
+
+    .container{
+      display:flex;
+      flex-flow:row wrap;
+      height:100%;
+
+      .main-logo-image{
+
+      // background:url('../img/logos/reactjs.png')no-repeat center ;
+      //     background-size:contain;
+      height:100%;
+      width:50%;
+      margin:0 auto;
+      animation: image 30s ease infinite;
+      animation-fill-mode: forwards;
+
+
+      @keyframes image{
+        0%   {
+          background:url('../img/logos/reactjs.png') no-repeat center ;
+          background-size:contain;
+         }
+        10%   {background:url('../img/logos/nodejs.png')no-repeat center ;
+          background-size:contain;
+        }
+
+        20%   {background:url('../img/logos/npm.png')no-repeat center;
+          background-size:contain;
+
+        }
+        30%   {background:url('../img/logos/webpack.png')no-repeat center;
+          background-size:contain;
+
+        }
+        40%   {background:url('../img/logos/git.png')no-repeat center ;
+          background-size:contain;
+        }
+        50%   {background:url('../img/logos/mongoDB.png')no-repeat center ;
+          background-size:contain;
+        }
+        60%   {background:url('../img/logos/babel.svg')no-repeat center ;
+          background-size:contain;
+        }
+        70%   {background:url('../img/logos/bootstrap.svg')no-repeat center ;
+          background-size:contain;
+        }
+        80%   {background:url('../img/logos/javascript.png')no-repeat center ;
+          background-size:contain;
+        }
+        100%   {background:url('../img/logos/learnmore.jpg')no-repeat center ;
+          background-size:contain;
+        }
+      }
+      }
+    }
+
+  }
+}
+
+  }
+
+}
