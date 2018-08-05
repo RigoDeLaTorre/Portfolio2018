@@ -4,9 +4,55 @@
 }
 #newCentury{
 background:#afd09a;
-h1{
-  color:#afd09a;
+.left-section{
+  background:white;
+  .squareNewCentury{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -75px;
+    top: 350px;
+    // background: #ffa90012;
+
+    border: 2px solid #afd09a63;
+    left: -100px;
+  }
+  .portfolio-titleName{
+    margin-top:230px;
+    margin-bottom:2rem;
+      text-align: center;
+    h1{
+      color:#afd09a;
+
+    }
+    h2{
+      font-weight:100;
+      letter-spacing: 2px;
+
+    }
+  }
+  .skills-container {
+    margin-top: 2rem;
+    padding:25px;
+
+    .skills {
+      margin-top: 2rem;
+      text-transform: capitalize;
+      h3{
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: 100;
+
+      }
+    }
+  }
 }
+
 .right-section{
   background:#000000c7;
 height:100%;
