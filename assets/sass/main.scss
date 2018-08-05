@@ -4,13 +4,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background:#ffa900 !important;
 
 
 }
 
 header{
   height:100vh;
-  background:#ffa900;
+
 
   nav{
 
@@ -155,7 +156,7 @@ header{
         display:inline-block;
     }
     span{
-      animation: titleSub 5s ease 1;
+      animation: titleSub 2.5s ease 1;
       animation-fill-mode: forwards;
       animation-delay:1s;
       display:block;
@@ -248,4 +249,105 @@ height:100%;
 
   }
 
+}
+// This is the portfolio section
+.portfolio-section{
+text-align: center;
+    margin:0 5rem;
+
+.row{
+  background:white;
+  margin:0;
+
+.portfolio-container {
+  background:white;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  @media screen and (max-width: 992px) {
+    flex-flow: column nowrap;
+  }
+
+  .img-container {
+    flex: 2;
+    margin: 0 auto;
+
+    &.img-right {
+      order: 1;
+    }
+
+    .portfolio-image {
+      max-width: 600px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0px 10px 54px -4px #d4c8d4;
+        @media screen and (max-width: 992px) {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  .description {
+    flex: 1;
+    padding: 5rem;
+    text-align: justify;
+    @media screen and (max-width: 500px) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: 992px) {
+      &.text-left {
+        order: 2;
+      }
+    }
+
+    h4 {
+      font-family: 'Oswald', sans-serif;
+      color: #191a17;
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      padding-top: 30px;
+      color: #656565;
+      line-height: 40px;
+    }
+
+    .website-live {
+      text-align: center;
+
+      .portfolio-button {
+        padding: 18px 25px;
+        margin-top: 10px;
+        border: 1px solid #dbdada;
+        background-color: white;
+        -webkit-transition: border 300ms ease, background-color 300ms ease, color 300ms ease;
+        transition: border 300ms ease, background-color 300ms ease, color 300ms ease;
+        font-family: 'Oswald', sans-serif;
+        color: #191a17;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: #C97D60;
+          transition-duration: 0.4s;
+          border: 1px solid #0a0a0a;
+        }
+      }
+    }
+  }
+}
+}
 }
