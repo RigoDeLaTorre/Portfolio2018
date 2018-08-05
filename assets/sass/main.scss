@@ -11,22 +11,7 @@ body {
 header{
   height:100vh;
   background:#ffa900;
-  h1{
-    font-size:40px;
-    font-weight:600;
-    margin-top:200px;
-    letter-spacing: 2px;
-    text-align: center;
 
-  }
-
-  h2{
-    font-size: 16px;
-      font-weight: 100;
-      letter-spacing: 7px;
-      margin-bottom: 100px;
-      text-align: center;
-  }
   nav{
 
 
@@ -104,6 +89,89 @@ header{
 
     }
   }
+  .down-arrow{
+    position: absolute;
+    top: 40vh;
+    right: -50px;
+    /* width: 20px; */
+    /* height: 20px; */
+    z-index: 1;
+    opacity:0;
+    animation: downArrow 2s linear 1;
+    animation-fill-mode: forwards;
+    @keyframes downArrow{
+      0%   {
+        opacity:0;
+          top: 40vh;
+       }
+       25%   {
+         opacity:0.2;
+           top: 50vh;
+        }
+
+        50%   {
+          opacity:0.4;
+            top: 60vh;
+         }
+         75%   {
+           opacity:.6;
+             top: 70vh;
+          }
+          100%   {
+            opacity:1;
+              top: 80vh;
+              -ms-transform: rotate(360deg); /* IE 9 */
+   -webkit-transform: rotate(360deg); /* Safari */
+   transform: rotate(360deg);
+           }
+
+}
+    img{
+      width:100px;
+      height:100px;
+
+
+
+    }
+  }
+  .title{
+    text-align: center;
+        margin-bottom: 100px;
+
+
+    h1{
+      font-size:50px;
+      font-weight:600;
+      margin-top:200px;
+      letter-spacing: 2px;
+
+
+    }
+
+    h2{
+      font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 7px;
+        display:inline-block;
+    }
+    span{
+      animation: titleSub 5s ease 1;
+      animation-fill-mode: forwards;
+      animation-delay:1s;
+      display:block;
+      margin:0 auto;
+      @keyframes titleSub{
+        0%   {
+          width:0;
+border-bottom:2px solid #ffa9007a;
+         }
+        100%   {
+  width:260px;
+          border-bottom:2px solid #ffa9007a;
+        }
+      }
+    }
+  }
     .skills-container{
       margin-top:2rem;
       .skills{
@@ -111,10 +179,10 @@ header{
         text-transform: capitalize;
         h3{
           font-size:18px;
-          font-weight:400;
+          font-weight:500;
         }
         h4{
-          font-size:14px;
+          font-size:16px;
           font-weight:100;
         }
       }
