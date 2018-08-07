@@ -1,6 +1,8 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "newCentury";
+@import "contact";
+@import "portfolio";
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -387,10 +389,14 @@ header {
             letter-spacing: 0.5px;
             text-decoration: none;
             text-transform: capitalize;
+            a{
+              text-decoration: none;
+                color: #191a17;
+            }
 
             &:hover {
               background-color: #ffa900;
-              transition-duration: 0.4s;
+              transition-duration: 0.3s;
               border: 1px solid #0a0a0a;
             }
           }

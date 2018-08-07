@@ -1,122 +1,195 @@
-.top-nav{
-  text-align: center;
-  margin:5rem 0;
-}
-#newCentury{
-background:#afd09a;
-.left-section{
-  background:white;
-  .squareNewCentury{
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    left: -75px;
-    top: 350px;
-    // background: #ffa90012;
+// .top-nav {
+//   text-align: center;
+//   margin: 5rem 0;
+// }
 
-    border: 2px solid #afd09a63;
-    left: -100px;
+#newCentury {
+  background: #afd09a;
+  .nav{
+    position:absolute;
+    top:0;
+    left:10px;
+    z-index: 1;
+    display:flex;
+    flex-direction:column;
+    cursor:pointer;
+    align-items: flex-start;
+    .nav-group{
+
+  margin-bottom:20px;
+
+  a{
+    text-decoration: none;
+    color:black;
+
+    &:hover{
+      color:#ffa900;
+    }
+
   }
-  .portfolio-titleName{
-    margin-top:230px;
-    margin-bottom:2rem;
+      img{
+        height:50px;
+        width:50px;
+      }
+      span{
+        margin-left:25px;
+        font-size:20px;
+        font-weight:100;
+        letter-spacing: 3px;
+        &:hover{
+          color:#ffa900;
+          font-weight:500 !important;
+        }
+
+
+      }
+    }
+
+  }
+
+  .left-section {
+    background: white;
+
+    .squareNewCentury {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      left: -75px;
+      top: 350px;
+      // background: #ffa90012;
+      border: 2px solid #afd09a63;
+      left: -100px;
+    }
+
+    .portfolio-titleName {
+      margin-top: 230px;
+      margin-bottom: 2rem;
       text-align: center;
-    h1{
-      color:#afd09a;
 
-    }
-    h2{
-      font-weight:100;
-      letter-spacing: 2px;
-
-    }
-  }
-  .skills-container {
-    margin-top: 2rem;
-    padding:25px;
-
-    .skills {
-      margin-top: 2rem;
-      text-transform: capitalize;
-      h3{
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        font-weight: 500;
+      h1 {
+        color: #afd09a;
       }
-      h4 {
-        font-size: 16px;
+
+      h2 {
         font-weight: 100;
+        letter-spacing: 2px;
+      }
+    }
 
+    .skills-container {
+      margin-top: 2rem;
+      padding: 25px;
+
+      .skills {
+        margin-top: 2rem;
+        text-transform: capitalize;
+        max-width:45%;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        h4 {
+          font-size: 16px;
+          font-weight: 100;
+          line-height:1.4;
+
+        }
       }
     }
   }
-}
 
-.right-section{
-  background:#000000c7;
-height:100%;
-display:flex;
-justify-content: center;
-flex-direction: column;
-h1{
-  margin:0;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid #ffffff45;
-  background-image: none;
-}
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: #565151;
-}
+  .right-section {
+    background: #000000c7;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #565151;
-}
-  .newCentury-images{
-    height:50vh;
-      width:100%;
-      margin:0 auto;
+    .visit-live {
+      text-align: right;
+      margin-top: 20px;
+
+      span {
+        color: white;
+        font-size: 18px;
+        background: #88b36d;
+        cursor: pointer;
+        padding: 5px 10px;
+        a{
+          text-decoration: none;
+          color:white;
+        }
+
+        &:hover {
+          background: #88b36dbd;
+        }
+      }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      height: 100px;
+      width: 100px;
+      outline: black;
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 1px solid #ffffff45;
+      background-image: none;
+    }
+
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 55px;
+      color: #565151;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 55px;
+      color: #565151;
+    }
+
+    .newCentury-images {
+      height: 50vh;
+      width: 100%;
+      margin: 0 auto;
       animation: newCenturyImages 20s ease infinite;
       animation-fill-mode: forwards;
-      @keyframes newCenturyImages{
-        0%   {
-          background:url('../img/newCenturyInvestment/main.png') no-repeat center ;
-          background-size:contain;
-         }
-        20%   {background:url('../img/newCenturyInvestment/buy.png')no-repeat center ;
-          background-size:contain;
+      @keyframes newCenturyImages {
+        0% {
+          background: url("../img/newCenturyInvestment/main.png") no-repeat center;
+          background-size: contain;
         }
 
-        40%   {background:url('../img/newCenturyInvestment/sell.png')no-repeat center;
-          background-size:contain;
+        20% {
+          background: url('../img/newCenturyInvestment/buy.png')no-repeat center;
+          background-size: contain;
+        }
 
+        40% {
+          background: url('../img/newCenturyInvestment/sell.png')no-repeat center;
+          background-size: contain;
         }
-        60%   {background:url('../img/newCenturyInvestment/mortgage.png')no-repeat center;
-          background-size:contain;
 
+        60% {
+          background: url('../img/newCenturyInvestment/mortgage.png')no-repeat center;
+          background-size: contain;
         }
-        80%   {background:url('../img/newCenturyInvestment/contact.png')no-repeat center ;
-          background-size:contain;
+
+        80% {
+          background: url('../img/newCenturyInvestment/contact.png')no-repeat center;
+          background-size: contain;
         }
-        100%   {
-          background:url('../img/newCenturyInvestment/main.png') no-repeat center ;
-          background-size:contain;
-         }
+
+        100% {
+          background: url("../img/newCenturyInvestment/main.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
   }
-  }
-}
-
-
 }
