@@ -68,7 +68,7 @@ header {
             padding: 10px;
             position: absolute;
             top: 0;
-            left: 25px;
+            left: 32px;
             z-index: 1;
           }
 
@@ -93,7 +93,8 @@ header {
           opacity: 0;
           animation: downArrow 2s linear 1;
           animation-fill-mode: forwards;
-          animation-delay: 2s;
+          animation-delay: 1.5s;
+
           @keyframes downArrow {
             0% {
               opacity: 0;
@@ -129,6 +130,7 @@ header {
           img {
             width: 100px;
             height: 100px;
+
           }
         }
 
@@ -295,6 +297,7 @@ header {
 .portfolio-section {
   text-align: center;
   margin: 0 5rem;
+
 
   .portfolio-title {
     padding: 10rem 0;
