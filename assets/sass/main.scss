@@ -6,41 +6,74 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #ffa900 !important;
 }
 
 header {
   height: 100vh;
+    background: #ffa900;
+    margin:0;
+    padding:0 5rem;
 
-  nav {
-    ul {
-      display: flex;
-      justify-content: flex-end;
+    .nav{
+      position:absolute;
+      top:0;
+      left:10px;
+      z-index: 1;
+      display:flex;
+      flex-direction:column;
+      cursor:pointer;
+      align-items: flex-start;
+      .nav-group{
 
-      li {
-        padding: 25px;
+    margin-bottom:20px;
+
+    a{
+      text-decoration: none;
+      color:black;
+
+      &:hover{
+        color:#ffa900;
       }
+
     }
-  }
+        img{
+          height:50px;
+          width:50px;
+        }
+        span{
+          margin-left:25px;
+          font-size:20px;
+          font-weight:100;
+          letter-spacing: 3px;
+          &:hover{
+            color:#ffa900;
+            font-weight:500 !important;
+          }
+
+
+        }
+      }
+
+    }
 
   .top {
     height: 100%;
 
     .row {
       height: 100%;
-      margin: 0 5rem;
+      margin:0;
 
       .left {
         background: white;
-        height: 100%;
+
         position: relative;
         border-bottom: 1px solid #3825008c;
 
         .square {
-          width: 520px;
-          height: 500px;
+          width: 700px;
+          height: 225px;
           position: absolute;
-          left: -75px;
+          left: -50px;
           top: 350px;
           // background: #ffa90012;
           border: 2px solid #ffa90012;
@@ -84,6 +117,7 @@ header {
         }
 
         .down-arrow {
+          cursor:pointer;
           position: absolute;
           top: 40vh;
           right: -50px;
@@ -91,7 +125,7 @@ header {
           /* height: 20px; */
           z-index: 1;
           opacity: 0;
-          animation: downArrow 2s linear 1;
+          animation: downArrow 1s linear;
           animation-fill-mode: forwards;
           animation-delay: 1.5s;
 
@@ -136,7 +170,7 @@ header {
 
         .title {
           text-align: center;
-          margin-bottom: 100px;
+          margin-bottom: 5rem;
 
           h1 {
             font-size: 50px;
@@ -170,64 +204,75 @@ header {
             }
           }
         }
+        .about-me{
+          font-size: .8rem;
+      max-width: 50%;
+      margin: 0 auto;
+        }
+.skill-main-container{
+    margin:0 auto;
+        max-width:50%;
+  .skills-container {
 
-        .skills-container {
-          margin-top: 2rem;
-          max-width:50%;
-          h2{
-            letter-spacing: 3px;
-            margin-left: 45px;
-          }
+    display:flex;
+    flex-flow:row wrap;
 
-          .skills {
-            margin-top: 2rem;
-            text-transform: capitalize;
+    h2{
+      letter-spacing: 3px;
+      margin-left: 45px;
+    }
 
-            .icon-container {
-              display: flex;
-              align-items: flex-end;
+    .skills {
+      margin-top: 2rem;
+      text-transform: capitalize;
+      flex-basis:50%;
 
-              img {
-                height: 25px;
-                width: 25px;
-                margin-right: 20px;
-                opacity: 0;
-                position: relative;
-                animation: iconImages 2s ease 1;
-                animation-fill-mode: forwards;
-                @keyframes iconImages {
-                  0% {opacity: 0;left: -100px;}
-                 50% {opacity: 0.5;}
-                  100% {opacity: 1;left: 0;}
-                }
-              }
+      .icon-container {
 
-              h3 {
-                margin: 0;
-                padding: 0;
-                font-size: 18px;
-                font-weight: 500;
-                color:#212529c2;
-              }
-            }
 
-            h4 {
-              font-size: 16px;
-              font-weight: 100;
-              margin-left: 45px;
-            }
+        img {
+          height: 25px;
+          width: 25px;
+          margin-bottom:1rem;
+          opacity: 0;
+          position: relative;
+          animation: iconImages 2s ease 1;
+          animation-fill-mode: forwards;
+          @keyframes iconImages {
+            0% {opacity: 0;left: -100px;}
+           50% {opacity: 0.5;}
+            100% {opacity: 1;left: 0;}
           }
         }
+
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 18px;
+          font-weight: 500;
+          color:#212529c2;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: 100;
+
+      }
+    }
+  }
+}
+
       }
 
       .right {
         background: #000000c7;
-        height: 100%;
+height:100vh;
 
-        .container {
-          display: flex;
-          flex-flow: row wrap;
-          height: 100%;
+        // .container {
+        //   display: flex;
+        //   flex-flow: row wrap;
+        //   height: 100%;
 
           .main-logo-image {
             height: 100%;
@@ -287,7 +332,7 @@ header {
               }
             }
           }
-        }
+        // }
       }
     }
   }

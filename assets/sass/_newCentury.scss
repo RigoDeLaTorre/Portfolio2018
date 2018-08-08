@@ -4,7 +4,11 @@
 // }
 
 #newCentury {
-  background: #afd09a;
+  text-align: center;
+margin: 0;
+background: #075390;
+padding: 0 5rem;
+height:100vh;
   .nav{
     position:absolute;
     top:0;
@@ -46,19 +50,21 @@
     }
 
   }
-
+.row{
+  margin:0;
   .left-section {
     background: white;
+    height:100vh;
 
     .squareNewCentury {
       width: 500px;
       height: 500px;
       position: absolute;
-      left: -75px;
+      left: -50px;
       top: 350px;
       // background: #ffa90012;
-      border: 2px solid #afd09a63;
-      left: -100px;
+      border: 2px solid #0753901a;
+
     }
 
     .portfolio-titleName {
@@ -104,7 +110,7 @@
 
   .right-section {
     background: #000000c7;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,4 +198,6 @@
       }
     }
   }
+}
+
 }

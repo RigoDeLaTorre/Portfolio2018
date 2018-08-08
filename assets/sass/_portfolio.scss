@@ -3,17 +3,13 @@
 @import "newCentury";
 @import "contact";
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #ffa900 !important;
-}
-
-
 // This is the portfolio section
 
 #portfolioId {
   text-align: center;
-  margin: 0 5rem;
+margin: 0;
+background: #2196F3;
+padding: 0 5rem;
   .nav{
     position:absolute;
     top:0;
