@@ -85,14 +85,15 @@ height:100vh;
     .skills-container {
       margin-top: 2rem;
       padding: 25px;
+      text-align: left;
 
       .skills {
         margin-top: 2rem;
-        text-transform: capitalize;
+
         max-width:45%;
 
         h3 {
-          margin: 0;
+          margin-bottom:.5rem;
           padding: 0;
           font-size: 18px;
           font-weight: 500;
@@ -114,27 +115,11 @@ height:100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    .visit-live {
-      text-align: right;
-      margin-top: 20px;
-
-      span {
-        color: white;
-        font-size: 18px;
-        background: #88b36d;
-        cursor: pointer;
-        padding: 5px 10px;
-        a{
-          text-decoration: none;
-          color:white;
-        }
-
-        &:hover {
-          background: #88b36dbd;
-        }
-      }
+  
+    .d-block{
+      margin:0 auto;
     }
+
 
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
