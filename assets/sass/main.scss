@@ -1,8 +1,13 @@
+
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "newCentury";
 @import "contact";
 @import "portfolio";
+@import "motorlines";
+
+$backgroundMain-right:rgba(0,0,0,.78);
+$seeworkText:rgba(0,0,0,.78);
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -44,6 +49,9 @@ header {
           font-size:20px;
           font-weight:100;
           letter-spacing: 3px;
+          @media only screen and (max-width: 768px) {
+  display:none;
+}
           &:hover{
             color:#ffa900;
             font-weight:500 !important;
@@ -76,6 +84,9 @@ header {
           top: 350px;
           background: #ffa90008;
           border: 2px solid #ffa90012;
+          @media only screen and (max-width: 768px) {
+  display:none;
+}
         }
 
         .seeWork {
@@ -91,10 +102,11 @@ header {
           z-index: 1;
           letter-spacing: 5px;
           cursor: pointer;
-          // border: 2px solid white;
-          // border-width:thin;
+          @media only screen and (max-width: 991px) {
+  display:none;
+}
           & span:first-child {
-            color: #000000c7;
+            color: $seeworkText;
             border: 1px solid black;
             border-width: thin;
             padding: 10px;
@@ -120,13 +132,14 @@ header {
           position: absolute;
           top: 40vh;
           right: -50px;
-          /* width: 20px; */
-          /* height: 20px; */
           z-index: 1;
           opacity: 0;
           animation: downArrow 1s linear;
           animation-fill-mode: forwards;
           animation-delay: 1.5s;
+          @media only screen and (max-width: 991px) {
+  display:none;
+}
 
           @keyframes downArrow {
             0% {
@@ -176,6 +189,9 @@ header {
             font-weight: 600;
             margin-top: 200px;
             letter-spacing: 2px;
+            @media only screen and (max-width: 768px) {
+            margin-top:5rem;
+  }
           }
 
           h2 {
@@ -204,7 +220,7 @@ header {
           }
         }
         .about-me{
-          font-size: .8rem;
+          font-size: .9em;
       max-width: 50%;
       margin: 0 auto;
       h1{
@@ -215,8 +231,12 @@ header {
     margin:0 auto;
         max-width:50%;
         margin-top:2rem;
+        @media only screen and (max-width: 768px) {
+margin:2rem auto;
+}
         h2{
           font-weight:300;
+          margin-bottom:.5em;
         }
   .skills-container {
 
@@ -229,7 +249,7 @@ header {
     }
 
     .skills {
-      margin-top: 2rem;
+      margin-bottom:1em;
       text-transform: capitalize;
       flex-basis:50%;
 
@@ -272,20 +292,17 @@ header {
       }
 
       .right {
-        background: #000000c7;
-height:100vh;
-
-        // .container {
-        //   display: flex;
-        //   flex-flow: row wrap;
-        //   height: 100%;
+        background:$backgroundMain-right;
+        height:100vh;
 
           .main-logo-image {
             height: 100%;
             width: 50%;
+            background-size: contain;
             margin: 0 auto;
             animation: image 30s ease infinite;
             animation-fill-mode: forwards;
+
             @keyframes image {
               0% {
                 background: url("../img/logos/reactjs.png") no-repeat center;
@@ -338,7 +355,7 @@ height:100vh;
               }
             }
           }
-        // }
+
       }
     }
   }
@@ -355,6 +372,9 @@ height:100vh;
     margin: 0;
     text-align: center;
     background: white;
+    @media only screen and (max-width: 768px) {
+      padding: 5rem 0 !important;
+}
   }
 
   .row {
@@ -459,3 +479,23 @@ height:100vh;
     }
   }
 }
+
+
+// .image-testing{
+// position:relative;
+// .changeOpacity{
+//   opacity:1;
+// }
+// img{
+//   position:absolute;
+//   top:0;
+//   left:0;
+//   max-width:100%;
+//   height:auto;
+//   background-size:contain;
+//   opacity:0;
+//   transition:opacity 5s ease-in-out 1;
+// }
+//
+//
+// }
