@@ -1,92 +1,98 @@
-
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "contact";
 @import "portfolio";
+
 @import "portfolioDetails";
-
-
-$backgroundMain-right:rgba(0,0,0,.78);
-$seeworkText:rgba(0,0,0,.78);
+$backgroundMain-right: rgba(0,0,0,.78);
+$seeworkText: rgba(0,0,0,.78);
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background: #ffa900;
-    margin:0;
-    padding:0 5rem;
+  background: #ffa900;
+  margin: 0;
+  padding: 0 5rem;
+  @media only screen and (max-width: 450px) {
+    padding: 0 0 0 4rem;
+  }
 
-    .nav{
-      position:absolute;
-      top:0;
-      left:10px;
-      z-index: 1;
-      display:flex;
-      flex-direction:column;
-      cursor:pointer;
-      align-items: flex-start;
-      .nav-group{
-
-    margin-bottom:20px;
-
-    a{
-      text-decoration: none;
-      color:black;
-
-      &:hover{
-        color:#ffa900;
-      }
-
-    }
-        img{
-          height:50px;
-          width:50px;
-        }
-        span{
-          margin-left:25px;
-          font-size:20px;
-          font-weight:100;
-          letter-spacing: 3px;
-          @media only screen and (max-width: 768px) {
-  display:none;
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-start;
+    @media only screen and (max-width: 450px) {
+    position:relative;
+    flex-direction:row;
+    justify-content: space-around;
+    left:0;
+    top:7px;
 }
-          &:hover{
-            color:#ffa900;
-            font-weight:500 !important;
-          }
 
+    .nav-group {
+      margin-bottom: 20px;
 
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          color: #ffa900;
         }
       }
 
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+      span {
+        margin-left: 25px;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+
+        &:hover {
+          color: #ffa900;
+          font-weight: 500 !important;
+        }
+      }
     }
+  }
 
   .top {
     height: 100%;
 
     .row {
       height: 100%;
-      margin:0;
+      margin: 0;
 
       .left {
         background: white;
-
         position: relative;
         border-bottom: 1px solid #3825008c;
 
         .square {
           width: 700px;
-          height: 225px;
+          height: 190px;
           position: absolute;
           left: -50px;
           top: 350px;
-          background: #ffa90008;
-          border: 2px solid #ffa90012;
+          background: rgba(255,169,0,0.03);
+
           @media only screen and (max-width: 768px) {
-  display:none;
-}
+            display: none;
+          }
         }
 
         .seeWork {
@@ -103,8 +109,9 @@ header {
           letter-spacing: 5px;
           cursor: pointer;
           @media only screen and (max-width: 991px) {
-  display:none;
-}
+            display: none;
+          }
+
           & span:first-child {
             color: $seeworkText;
             border: 1px solid black;
@@ -128,7 +135,7 @@ header {
         }
 
         .down-arrow {
-          cursor:pointer;
+          cursor: pointer;
           position: absolute;
           top: 40vh;
           right: -50px;
@@ -138,9 +145,8 @@ header {
           animation-fill-mode: forwards;
           animation-delay: 1.5s;
           @media only screen and (max-width: 991px) {
-  display:none;
-}
-
+            display: none;
+          }
           @keyframes downArrow {
             0% {
               opacity: 0;
@@ -176,13 +182,15 @@ header {
           img {
             width: 100px;
             height: 100px;
-
           }
         }
 
         .title {
           text-align: center;
           margin-bottom: 4rem;
+          @media only screen and (max-width: 450px) {
+margin-bottom:2rem;
+}
 
           h1 {
             font-size: 50px;
@@ -190,12 +198,16 @@ header {
             margin-top: 200px;
             letter-spacing: 2px;
             @media only screen and (max-width: 768px) {
-            margin-top:5rem;
+              margin-top: 5rem;
+              font-size: 1.7em;
+            }
+            @media only screen and (max-width: 450px) {
+          margin-top:2rem;
   }
           }
 
           h2 {
-            font-size: 16px;
+            font-size: 0.8em;
             font-weight: 100;
             letter-spacing: 7px;
             display: inline-block;
@@ -219,153 +231,178 @@ header {
             }
           }
         }
-        .about-me{
-          font-size: .9em;
-      max-width: 50%;
-      margin: 0 auto;
-      h1{
-        font-weight:300;
-      }
-        }
-.skill-main-container{
-    margin:0 auto;
-        max-width:50%;
-        margin-top:2rem;
-        @media only screen and (max-width: 768px) {
-margin:2rem auto;
-}
-        h2{
-          font-weight:300;
-          margin-bottom:.5em;
-        }
-  .skills-container {
 
-    display:flex;
-    flex-flow:row wrap;
+        .about-me {
+          font-size: 0.9em;
+          max-width: 50%;
+          margin: 0 auto;
+          @media only screen and (max-width: 450px) {
+            max-width: 90%;
+          }
 
-    h2{
-      letter-spacing: 3px;
-      margin-left: 45px;
-    }
-
-    .skills {
-      margin-bottom:1em;
-      text-transform: capitalize;
-      flex-basis:50%;
-
-      .icon-container {
-
-
-        img {
-          height: 25px;
-          width: 25px;
-          margin-bottom:1rem;
-          opacity: 0;
-          position: relative;
-          animation: iconImages 2s ease 1;
-          animation-fill-mode: forwards;
-          @keyframes iconImages {
-            0% {opacity: 0;left: -100px;}
-           50% {opacity: 0.5;}
-            100% {opacity: 1;left: 0;}
+          h1 {
+            font-size: 2em;
+            font-weight: 300;
+          }
+          p{
+            font-size:.9em;
           }
         }
 
-        h3 {
-          margin: 0;
-          padding: 0;
-          font-size: 18px;
-          font-weight: 500;
-          color:#212529c2;
-        }
-      }
+        .skill-main-container {
+          margin: 0 auto;
+          max-width: 50%;
+          margin-top: 2rem;
+          @media only screen and (max-width: 768px) {
+            margin: 2rem auto;
+          }
+          @media only screen and (max-width: 450px) {
+            max-width: 90%;
+          }
 
-      h4 {
-        font-size: 16px;
-        font-weight: 100;
+          h2 {
+            font-size: 2em;
+            font-weight: 300;
+            margin-bottom: 0.5em;
+          }
 
-      }
-    }
-  }
-}
+          .skills-container {
+            display: flex;
+            flex-flow: row wrap;
 
-      }
+            h2 {
+              letter-spacing: 3px;
+              margin-left: 45px;
+            }
 
-      .right {
-        background:$backgroundMain-right;
-        height:100vh;
+            .skills {
+              margin-bottom: 1em;
+              text-transform: capitalize;
+              flex-basis: 50%;
 
-          .main-logo-image {
-            height: 100%;
-            width: 50%;
-            background-size: contain;
-            margin: 0 auto;
-            animation: image 30s ease infinite;
-            animation-fill-mode: forwards;
+              .icon-container {
+                img {
+                  height: 25px;
+                  width: 25px;
+                  margin-bottom: 1rem;
+                  opacity: 0;
+                  position: relative;
+                  animation: iconImages 2s ease 1;
+                  animation-fill-mode: forwards;
+                  @keyframes iconImages {
+                    0% {
+                      opacity: 0;
+                      left: -100px;
+                    }
 
-            @keyframes image {
-              0% {
-                background: url("../img/logos/reactjs.png") no-repeat center;
-                background-size: contain;
+                    50% {
+                      opacity: 0.5;
+                    }
+
+                    100% {
+                      opacity: 1;
+                      left: 0;
+                    }
+                  }
+                }
+
+                h3 {
+                  margin: 0;
+                  padding: 0;
+                  font-size: 1em;
+                  font-weight: 500;
+                  color: #212529c2;
+                }
               }
 
-              10% {
-                background: url('../img/logos/nodejs.png')no-repeat center;
-                background-size: contain;
-              }
-
-              20% {
-                background: url('../img/logos/npm.png')no-repeat center;
-                background-size: contain;
-              }
-
-              30% {
-                background: url('../img/logos/webpack.png')no-repeat center;
-                background-size: contain;
-              }
-
-              40% {
-                background: url('../img/logos/git.png')no-repeat center;
-                background-size: contain;
-              }
-
-              50% {
-                background: url('../img/logos/mongoDB.png')no-repeat center;
-                background-size: contain;
-              }
-
-              60% {
-                background: url('../img/logos/babel.svg')no-repeat center;
-                background-size: contain;
-              }
-
-              70% {
-                background: url('../img/logos/bootstrap.svg')no-repeat center;
-                background-size: contain;
-              }
-
-              80% {
-                background: url('../img/logos/javascript.png')no-repeat center;
-                background-size: contain;
-              }
-
-              100% {
-                background: url('../img/logos/learnmore.jpg')no-repeat center;
-                background-size: contain;
+              h4 {
+                font-size: .9em;
+                font-weight: 100;
               }
             }
           }
+        }
+      }
 
+      .right {
+        background: $backgroundMain-right;
+        height: 100vh;
+        @media only screen and (max-width: 450px) {
+          display: none;
+        }
+
+        .main-logo-image {
+          height: 100%;
+          width: 50%;
+          background-size: contain;
+          margin: 0 auto;
+          animation: image 30s ease infinite;
+          animation-fill-mode: forwards;
+          @keyframes image {
+            0% {
+              background: url("../img/logos/reactjs.png") no-repeat center;
+              background-size: contain;
+            }
+
+            10% {
+              background: url('../img/logos/nodejs.png')no-repeat center;
+              background-size: contain;
+            }
+
+            20% {
+              background: url('../img/logos/npm.png')no-repeat center;
+              background-size: contain;
+            }
+
+            30% {
+              background: url('../img/logos/webpack.png')no-repeat center;
+              background-size: contain;
+            }
+
+            40% {
+              background: url('../img/logos/git.png')no-repeat center;
+              background-size: contain;
+            }
+
+            50% {
+              background: url('../img/logos/mongoDB.png')no-repeat center;
+              background-size: contain;
+            }
+
+            60% {
+              background: url('../img/logos/babel.svg')no-repeat center;
+              background-size: contain;
+            }
+
+            70% {
+              background: url('../img/logos/bootstrap.svg')no-repeat center;
+              background-size: contain;
+            }
+
+            80% {
+              background: url('../img/logos/javascript.png')no-repeat center;
+              background-size: contain;
+            }
+
+            100% {
+              background: url('../img/logos/learnmore.jpg')no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
       }
     }
   }
 }
 // This is the portfolio section
 
-#portfolioId-section  {
+#portfolioId-section {
   text-align: center;
-background: #2196F3;
-padding: 0 5rem;
+  background: #2196F3;
+  padding: 0 5rem;
+  @media only screen and (max-width: 450px) {
+    padding: 0 0 0 4rem;
+  }
 
   .portfolio-title {
     padding: 10rem 0;
@@ -374,13 +411,13 @@ padding: 0 5rem;
     background: white;
     @media only screen and (max-width: 768px) {
       padding: 5rem 0 !important;
-}
+    }
   }
 
   .row {
     background: white;
     margin: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     .portfolio-container {
@@ -444,7 +481,11 @@ padding: 0 5rem;
         p {
           padding-top: 30px;
           color: #656565;
-          line-height: 40px;
+          line-height: 1.7;
+          .responsive-text{
+            font-size:.8em;
+            background:rgba(33,150,243,0.17);
+          }
         }
 
         .website-live {
@@ -463,9 +504,10 @@ padding: 0 5rem;
             letter-spacing: 0.5px;
             text-decoration: none;
             text-transform: capitalize;
-            a{
+
+            a {
               text-decoration: none;
-                color: #191a17;
+              color: #191a17;
             }
 
             &:hover {
@@ -479,8 +521,6 @@ padding: 0 5rem;
     }
   }
 }
-
-
 // .image-testing{
 // position:relative;
 // .changeOpacity{

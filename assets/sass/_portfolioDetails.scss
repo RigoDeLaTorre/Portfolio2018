@@ -8,7 +8,7 @@ body{
   padding: 0 5em;
   background: #075390;
   @media only screen and (max-width: 600px) {
-padding: 0 0 0 5rem;
+padding: 0 0 0 2rem;
 }
 
   .nav {
@@ -20,6 +20,13 @@ padding: 0 0 0 5rem;
     flex-direction: column;
     cursor: pointer;
     align-items: flex-start;
+    @media only screen and (max-width: 450px) {
+    position:relative;
+    flex-direction:row;
+    justify-content: space-around;
+    left:0;
+    top:7px;
+}
 
     .nav-group {
       margin-bottom: 20px;
@@ -148,10 +155,13 @@ max-width:100%;
 
     .right-section {
       background: rgba(0,0,0,.78);
-      height: 100vh;
+      height:100vh;
       display: flex;
       justify-content: center;
       flex-direction: column;
+      @media only screen and (max-width: 450px) {
+        height:300px;
+  }
 
       .d-block {
         margin: 0 auto;

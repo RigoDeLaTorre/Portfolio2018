@@ -5,9 +5,9 @@ import $ from 'jquery';
 
 
 
-$("#arrow-link").click(function() {
+$(".arrow-link").click(function() {
   console.log('clicking')
     $('html, body').animate({
-        scrollTop: $("#portfolioId").offset().top
-    }, 1000);
+        scrollTop: $("#portfolioId-section").offset().top
+    }, 500);
 });

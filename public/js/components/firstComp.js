@@ -20,11 +20,11 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _jquery2.default)("#arrow-link").click(function () {
+(0, _jquery2.default)(".arrow-link").click(function () {
     console.log('clicking');
     (0, _jquery2.default)('html, body').animate({
-        scrollTop: (0, _jquery2.default)("#portfolioId").offset().top
-    }, 1000);
+        scrollTop: (0, _jquery2.default)("#portfolioId-section").offset().top
+    }, 500);
 });
 
 /***/ })
