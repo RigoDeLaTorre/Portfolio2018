@@ -2,7 +2,7 @@
 body{
     background: #075390;
 
-#newCentury {
+#motorlines,#taxService,#newCentury {
   text-align: center;
   margin: 0;
   padding: 0 5em;
@@ -60,13 +60,14 @@ padding: 0 0 0 5rem;
 
     .left-section {
       background: white;
+      padding:0;
 
       .squareNewCentury {
         width: 500px;
         height: 500px;
         position: absolute;
         left: -50px;
-        top: 350px;
+        top: 400px;
         // background: #ffa90012;
         border: 2px solid #0753901a;
         @media only screen and (max-width: 600px) {
@@ -78,19 +79,34 @@ padding: 0 0 0 5rem;
         margin-top: 230px;
         margin-bottom: 2em;
         text-align: center;
+        background:#e9eef2;
+        padding:15px;
+
         @media only screen and (max-width: 600px) {
           margin:2em 0;
       }
 
         h1 {
-          color: #afd09a;
+          color: #4f4f58;
           font-size:2em;
         }
 
         h2 {
           font-weight: 100;
           letter-spacing: 2px;
-          font-size:1.5em;
+          font-size:1.2em;
+        }
+        .nextPrevious{
+          margin-top:15px;
+          display:flex;
+          flex-flow:row nowrap;
+          justify-content: center;
+          img{
+            width:30px;
+            height:30px;
+            margin-right:18px;
+
+          }
         }
       }
 
@@ -106,6 +122,7 @@ padding: 0 0 0 5rem;
         .skills {
           margin-top: 2em;
           max-width: 45%;
+
           @media only screen and (max-width: 768px) {
         max-width:75%;
 }

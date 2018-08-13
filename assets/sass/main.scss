@@ -1,10 +1,10 @@
 
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import "newCentury";
 @import "contact";
 @import "portfolio";
-@import "motorlines";
+@import "portfolioDetails";
+
 
 $backgroundMain-right:rgba(0,0,0,.78);
 $seeworkText:rgba(0,0,0,.78);
@@ -362,10 +362,10 @@ margin:2rem auto;
 }
 // This is the portfolio section
 
-.portfolio-section {
+#portfolioId-section  {
   text-align: center;
-  margin: 0 5rem;
-
+background: #2196F3;
+padding: 0 5rem;
 
   .portfolio-title {
     padding: 10rem 0;
