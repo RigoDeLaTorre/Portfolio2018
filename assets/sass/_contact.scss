@@ -1,7 +1,3 @@
-// .top-nav {
-//   text-align: center;
-//   margin: 5rem 0;
-// }
 
 body {
   background: #afd09a;
@@ -10,13 +6,12 @@ body {
     background: #afd09a;
     text-align: center;
     margin: 0;
-    background: #afd09a; // padding: 0 5rem;
-    height: 100vh; // @media only screen and (max-width: 768px) {
-    // padding:0;
-    // }
+    background: #afd09a;
+    height: 100vh;
     @media only screen and (max-width: 768px) {
       padding: 0 0 0 4rem;
     }
+
     .nav {
       position: absolute;
       top: 0;
@@ -78,13 +73,11 @@ body {
         background: white;
         height: 100vh;
 
-
         .contact-name {
           margin: 40% 0 0 25%;
           text-align: left;
           @media only screen and (max-width: 768px) {
-        margin:10rem 0;
-
+            margin: 10rem 0;
           }
 
           h1 {
@@ -93,7 +86,7 @@ body {
             margin-bottom: 1rem;
             text-transform: uppercase;
             @media only screen and (max-width: 450px) {
-              font-size:1.4em;
+              font-size: 1.4em;
             }
           }
 

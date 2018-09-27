@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "contact";
 @import "portfolio";
-
 @import "portfolioDetails";
 $backgroundMain-right: rgba(0,0,0,.78);
 $seeworkText: rgba(0,0,0,.78);
@@ -29,12 +28,12 @@ header {
     cursor: pointer;
     align-items: flex-start;
     @media only screen and (max-width: 450px) {
-    position:relative;
-    flex-direction:row;
-    justify-content: space-around;
-    left:0;
-    top:7px;
-}
+      position: relative;
+      flex-direction: row;
+      justify-content: space-around;
+      left: 0;
+      top: 7px;
+    }
 
     .nav-group {
       margin-bottom: 20px;
@@ -84,12 +83,11 @@ header {
 
         .square {
           width: 700px;
-          height: 190px;
+          height: 175px;
           position: absolute;
           left: -50px;
           top: 350px;
           background: rgba(255,169,0,0.03);
-
           @media only screen and (max-width: 768px) {
             display: none;
           }
@@ -189,8 +187,8 @@ header {
           text-align: center;
           margin-bottom: 4rem;
           @media only screen and (max-width: 450px) {
-margin-bottom:2rem;
-}
+            margin-bottom: 2rem;
+          }
 
           h1 {
             font-size: 50px;
@@ -202,8 +200,8 @@ margin-bottom:2rem;
               font-size: 1.7em;
             }
             @media only screen and (max-width: 450px) {
-          margin-top:2rem;
-  }
+              margin-top: 2rem;
+            }
           }
 
           h2 {
@@ -244,8 +242,9 @@ margin-bottom:2rem;
             font-size: 2em;
             font-weight: 300;
           }
-          p{
-            font-size:.9em;
+
+          p {
+            font-size: 0.9em;
           }
         }
 
@@ -316,7 +315,7 @@ margin-bottom:2rem;
               }
 
               h4 {
-                font-size: .9em;
+                font-size: 0.9em;
                 font-weight: 100;
               }
             }
@@ -482,9 +481,10 @@ margin-bottom:2rem;
           padding-top: 30px;
           color: #656565;
           line-height: 1.7;
-          .responsive-text{
-            font-size:.8em;
-            background:rgba(33,150,243,0.17);
+
+          .responsive-text {
+            font-size: 0.8em;
+            background: rgba(33,150,243,0.17);
           }
         }
 
@@ -539,3 +539,12 @@ margin-bottom:2rem;
 //
 //
 // }
+
+#copybutton {
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  background: orange;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}

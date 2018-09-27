@@ -1,70 +1,63 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-
-
 // This is the portfolio section
-
 #portfolioId {
   text-align: center;
-background: #2196F3;
-padding: 0 5rem;
-@media only screen and (max-width: 450px) {
-padding: 0 0 0 4rem;
-}
+  background: #2196F3;
+  padding: 0 5rem;
+  @media only screen and (max-width: 450px) {
+    padding: 0 0 0 4rem;
+  }
 
-
-
-  .nav{
-    position:absolute;
-    top:0;
-    left:10px;
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 10px;
     z-index: 1;
-    display:flex;
-    flex-direction:column;
-    cursor:pointer;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
     align-items: flex-start;
     @media only screen and (max-width: 450px) {
-    position:relative;
-    flex-direction:row;
-    justify-content: space-around;
-    left:0;
-    top:7px;
-}
-
-    .nav-group{
-
-  margin-bottom:20px;
-
-  a{
-    text-decoration: none;
-    color:black;
-
-    &:hover{
-      color:#ffa900;
+      position: relative;
+      flex-direction: row;
+      justify-content: space-around;
+      left: 0;
+      top: 7px;
     }
 
-  }
-      img{
-        height:50px;
-        width:50px;
+    .nav-group {
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          color: #ffa900;
+        }
       }
-      span{
-        margin-left:25px;
-        font-size:20px;
-        font-weight:100;
+
+      img {
+        height: 50px;
+        width: 50px;
+      }
+
+      span {
+        margin-left: 25px;
+        font-size: 20px;
+        font-weight: 100;
         letter-spacing: 3px;
         @media only screen and (max-width: 768px) {
-        display:none;
-      }
-        &:hover{
-          color:#ffa900;
-          font-weight:500 !important;
+          display: none;
         }
 
-
+        &:hover {
+          color: #ffa900;
+          font-weight: 500 !important;
+        }
       }
     }
-
   }
 
   .portfolio-title {
@@ -73,15 +66,14 @@ padding: 0 0 0 4rem;
     text-align: center;
     background: white;
     @media only screen and (max-width: 450px) {
-    padding: 2rem 0 5rem 0;
-}
-
+      padding: 2rem 0 5rem;
+    }
   }
 
   .row {
     background: white;
     margin: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
 
     .portfolio-container {
@@ -90,7 +82,7 @@ padding: 0 0 0 4rem;
       flex-flow: row nowrap;
       max-width: 1200px;
       margin: 0 auto 5rem;
-      font-size:1em;
+      font-size: 1em;
       @media screen and (max-width: 992px) {
         flex-flow: column nowrap;
       }
@@ -147,7 +139,7 @@ padding: 0 0 0 4rem;
           padding-top: 30px;
           color: #656565;
           line-height: 40px;
-          font-size:.8em;
+          font-size: 0.8em;
         }
 
         .website-live {
@@ -166,9 +158,10 @@ padding: 0 0 0 4rem;
             letter-spacing: 0.5px;
             text-decoration: none;
             text-transform: capitalize;
-            a{
+
+            a {
               text-decoration: none;
-                color: #191a17;
+              color: #191a17;
             }
 
             &:hover {
